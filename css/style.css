@@ -1,0 +1,418 @@
+/*
+By codetomake.com
+*/
+
+
+* {
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+	color: #fe6aa4;
+}
+
+a:hover {
+	color: #651610;
+}
+
+small ,small a {
+	font-size: 11px;
+}
+
+body {
+	margin:0;
+	padding:0;
+	background: #ffffff url('') top left repeat-x;
+	font-family: Helvetica;
+	color: #4e6e72;
+}
+
+header .top {
+	width: 960px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+header .top .social {
+	padding: 7px 0;
+	margin: 0;
+	width: 350px;
+	height: 40px;
+	float: left;
+}
+
+header .top .social a {
+	color: #bababa;
+	margin-right: 5px;
+	transition: color 0.1s;
+}
+
+header .top .social a:hover {
+	color: #fe6aa4;
+}
+
+header .top .search {
+	float: right;
+	padding-top: 7px;
+}
+
+header .top .search input[type="submit"] {
+	width: 80px;
+	height: 25px;
+	background: url('../img/search-btn.gif') top left no-repeat;
+	color: transparent;
+	border: none;
+	margin-left: -80px;
+}
+
+header .top .search input[type="submit"]:hover {
+	background-position: left -25px;
+}
+
+header .top .search input[type="text"] {
+	width: 410px;
+	height: 25px;
+	color: gray;
+	border: 1px solid #bababa;
+	padding-right: 80px;
+	padding-left: 5px;
+}
+
+header .head {
+	width: 960px;
+	height: 110px;
+	margin: 0 auto;
+	clear: both;
+}
+
+header .head .logo {
+	align:center;
+	display: block;
+	float: left;
+	width: 400px;
+	height: 109px;
+	background: url('../img/logo.svg') top left no-repeat;
+}
+
+header .head .logo em {
+	display: none;
+}
+
+header .head .top-banner {
+	display: block;
+	float: right;
+	width: 468px;
+	height: 60px;
+	margin-top: 23px;
+}
+
+header nav {
+	width: 960px;
+	height: 40px;
+	margin: 0 auto;
+	clear: both;
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+header nav ul li {
+	display: inline;
+	margin:0;
+}
+
+header nav ul li a {
+	display: inline-block;
+	color: #e52e78;
+	padding: 9px 10px;
+	font-size: 14px;
+	height: 40px;
+	font-weight: bold;
+}
+
+header nav ul li a:hover , header nav ul li a.active {
+	background-color: #fe6aa4;
+	color: #fff!important;
+}
+
+header nav ul li.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+header nav ul li.dropdown .dropdown-menu {
+	position: absolute;
+	display: none;
+	background: #f3e0de;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+}
+
+header nav ul li.dropdown .dropdown-menu a {
+	width: 100%;
+	border-bottom: 1px solid #ebcac7;
+	font-size: 12px;
+	height: 30px;
+}
+
+header nav ul li.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.slider {
+	background: #fff;
+	padding: 10px;
+}
+
+.slider .inner {
+	margin: 0 auto;
+	width: 960px;
+	height: 171px;
+}
+
+.main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.col-main {
+	float: left;
+	width: 710px;
+	padding: 10px 10px 10px 0;
+}
+
+.col-main-full {
+	float: left;
+	width: 960px;
+	padding: 10px;
+}
+
+.col-right {
+	float: right;
+	width: 240px;
+}
+
+.col-right .box {
+	width: 240px;
+	border: 10px solid #fff;
+	background: #fe6aa4;
+	margin: 10px 0;
+	padding: 10px;
+	color: #fff;
+}
+
+.col-right .box h2 {
+	display: block;
+	width: 100%;
+	height: 25px;
+	background: #e52e78;
+	padding: 2px 10px;
+	margin: 0 0 10px 0;
+}
+
+.col-right .box hr {
+	border-top: 1px solid #f84d44;
+	border-bottom: 1px solid #d74239;
+	border-right:0;border-left:0;
+}
+
+.col-right .box .font-awesome {
+	padding: 5px;
+}
+
+.col-right .box .font-awesome a {
+	color: #fff;
+	margin-right: 3px;
+	transition: color 0.1s;
+}
+
+.col-right .box .font-awesome a:hover {
+	color: #d1d1d1;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.contact input[type="text"], .contact textarea {
+	border: 1px solid #e0e0e0;
+	padding: 5px;
+	width: 300px;
+}
+
+.contact input[type="text"]:hover, .contact textarea:hover,
+.contact input[type="text"]:focus, .contact textarea:focus {
+	border: 1px solid #e44238;
+}
+
+.contact #message {
+	width: 100%;
+	height: 140px;
+}
+
+.contact input[type="submit"] {
+	border: none;
+	background-color: #b7b7b7;
+	color: #fff;
+	padding: 3px 10px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+	background-color: #e44238;
+}
+
+/* Articles */
+.content article {
+	border: 1px solid #dfdfdf;
+	padding: 0;
+	margin: 10px 0;
+}
+
+.content article h2 {
+	margin-left: 20px;
+}
+
+.content article .abstract {
+	padding: 10px;
+}
+
+.content article ul.tags {
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+}
+
+.content article ul.tags li {
+	display: inline;
+}
+
+.content article ul.tags li a {
+	display: inline-block;
+	padding: 2px 5px;
+	border: 1px solid #dddddd;
+	color: #aeaeae;
+	font-size: 11px;
+	border-radius: 4px;
+}
+
+.content article ul.tags li a:hover {
+	background: #e8e8e8;
+	color: #919191;
+}
+
+.content article .bottom-bar {
+	background: #dfdfdf;
+	overflow: auto;
+}
+
+.content article .bottom-bar div {
+	font-size: 11px;
+	padding: 3px 10px;
+	color: #7f7f7f;
+}
+
+.content article .bottom-bar .author {
+	float: left;
+}
+
+.content article .bottom-bar .author a {
+	color: #7f7f7f;
+	font-size: 11px;
+}
+
+.content article .bottom-bar .author a:hover {
+	color: #525252;
+}
+
+.content article .bottom-bar .date {
+	float: right;
+}
+
+.content article .readmore {
+	font-size: 12px; 
+	color: #c62f1a;
+}
+
+.content article .readmore span {
+	font-size: 9px;
+	font-weight: bold;
+	font-family: tahoma;
+}
+
+.content .pagination {
+	list-style: none;
+	text-align: center;
+}
+
+.content .pagination li {
+	display: inline;
+}
+
+.content .pagination li a {
+	display: inline-block;
+	border: 1px solid #dfdfdf;
+	background: #ebebeb;
+	padding: 1px 7px;
+}
+
+.content .pagination li a:hover , .content .pagination li a.active {
+	background: #d4d4d4;
+}
+/**********/
+
+img.thumb_medium {
+    border: 0px solid #dbdbdb;
+    padding: 20px;
+    width: 310px;
+	height: 220px;
+}
+
+img.thumb_medium:hover {
+    box-shadow: 0 0 2px 2px #e2e2e2;
+}
+
+hr {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e1dfdf;
+	border-right:0;border-left:0;
+}
+
+footer {
+	color: #fff;
+	height: 110px;
+	background: url('../img/footer-bg.gif') top left repeat-x;
+	text-align: center;
+	clear: both;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer .ftop {
+	width: 960px;
+	margin: 0 auto;
+	height: 70px;
+	padding: 10px;
+}
+footer .fbottom {
+	width: 960px;
+	margin: 0 auto;
+	height: 40px;
+	padding: 10px;
+}
+
+.clear {
+	clear: both;
+}
